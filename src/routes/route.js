@@ -133,4 +133,12 @@ router.post("/registerPlayer", function (req, res) {
   return res.send(array);
 });
 
+// Assignment on Schema dated 26/02/2022
+
+const usercontroller = require("../controller/userController");
+
+router.post("/createNewBook", usercontroller.createNewBook); //accessing this function from usercontroller.js
+
+router.get("/getBookList", userController.getBookList); //accessing this function from usercontroller.js
+
 module.exports = router;
